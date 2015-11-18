@@ -1,7 +1,8 @@
 from datetime import datetime
 
 f = open('access.log.1')
-lines2 = f.read().split('\n')
+test = f.read().strip()
+lines2 = test.split('\n')
 f.close()
 
 i = 0
