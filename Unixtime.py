@@ -1,11 +1,10 @@
 from datetime import datetime
 
 f = open('access.log.1')
-
-for line in f:
-    line = line.strip()
-    l = line.split(' ')
-    liners =  float(l[0])
-    print datetime.fromtimestamp(liners)
+lines2 = f.read().split('\n')
 f.close()
 
+line = lines2[0]
+date = line[0:13]
+date2 = line[14:]
+print date + date2
