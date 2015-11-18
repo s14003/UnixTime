@@ -13,5 +13,5 @@ while i < size:
     date2 = float(line[0:13])
     datetime = datetime.fromtimestamp(date2)
 
-    print date + date2
+    print str(datetime) + date2
     i += 1
