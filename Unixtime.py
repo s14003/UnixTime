@@ -4,7 +4,7 @@ f = open('access.log.1')
 lines2 = f.read().split('\n')
 f.close()
 
-i = 0;
+i = 0
 size = len(lines2) - 1
 
 while i < size:
