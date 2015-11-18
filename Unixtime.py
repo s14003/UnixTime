@@ -4,7 +4,14 @@ f = open('access.log.1')
 lines2 = f.read().split('\n')
 f.close()
 
-line = lines2[0]
-date = line[0:13]
-date2 = line[14:]
-print date + date2
+i = 0;
+size = len(lines2) - 1
+
+while i < size:
+    line = lines2[i]
+    date = line[14:]
+    date2 = float(line[0:13])
+    datetime = datetime.fromtimestamp(date2)
+
+    print date + date2
+    i += 1
